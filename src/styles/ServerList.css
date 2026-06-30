@@ -1,0 +1,77 @@
+.server-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.server-item {
+  background: rgba(0, 212, 255, 0.05);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.server-item:hover {
+  background: rgba(0, 212, 255, 0.1);
+  border-left-color: #00d4ff;
+  transform: translateX(5px);
+}
+
+.server-item.active {
+  background: rgba(0, 212, 255, 0.15);
+  border-left-color: #00d4ff;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+}
+
+.server-info h3 {
+  margin: 0 0 5px 0;
+  color: #00d4ff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.server-ip {
+  margin: 0 0 8px 0;
+  color: #a0a0a0;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.server-stats {
+  display: flex;
+  gap: 10px;
+  margin: 8px 0;
+  font-size: 12px;
+}
+
+.players {
+  color: #ffb700;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.online {
+  color: #00ff00;
+}
+
+.status.offline {
+  color: #ff0000;
+}
+
+.server-desc {
+  margin: 8px 0 0 0;
+  color: #a0a0a0;
+  font-size: 12px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
